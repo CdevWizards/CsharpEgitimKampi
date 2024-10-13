@@ -69,8 +69,8 @@ namespace Arrays
         // } 
         // Console.WriteLine(maxNumber);
 
-        string[] persons = {"Ali", "Mustafa", "Mehmet","Ahmet","Cem" };
-        Console.WriteLine(persons.Length);
+        // string[] persons = {"Ali", "Mustafa", "Mehmet","Ahmet","Cem" };
+        // Console.WriteLine(persons.Length);
 
         #endregion
 
