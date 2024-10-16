@@ -117,25 +117,80 @@ namespace Arrays
     //     sum += numbers[i];
     // }
     // Console.WriteLine(sum);
-    int[] numbers = {10,21,33,40,50};
-    Console.WriteLine("Çift Sayılar");
-    for (int i = 0; i < numbers.Length;i++ )
-    {
-        if(numbers[i] % 2 ==0)
-        {
-            Console.WriteLine(numbers[i]);
-        }
-    }
-    Console.WriteLine("Tek Sayılar");
-    for (int i = 0; i < numbers.Length;i++ )
-    {
-        if(numbers[i] % 2 ==1)
-        {
-            Console.WriteLine(numbers[i]);
-        }
+    // int[] numbers = {10,21,33,40,50};
+    // Console.WriteLine("Çift Sayılar");
+    // for (int i = 0; i < numbers.Length;i++ )
+    // {
+    //     if(numbers[i] % 2 ==0)
+    //     {
+    //         Console.WriteLine(numbers[i]);
+    //     }
+    // }
+    // Console.WriteLine("Tek Sayılar");
+    // for (int i = 0; i < numbers.Length;i++ )
+    // {
+    //     if(numbers[i] % 2 ==1)
+    //     {
+    //         Console.WriteLine(numbers[i]);
+    //     }
 
         #endregion
+        #region Foreach 
+
+        // Foreach(1;2;3;4)
+
+        // 1: Değişken Türü
+        // 2: Değişken Adı
+        // 3: In
+        // 4: Liste, Koleksiyon, Dizi
+        // string[] cities = {"Budapeşte", "Mersin", "Istanbul", "Antalya", "isparta", "Hatay"};
+
+        // foreach(string city in cities)
+        // {
+        //     Console.WriteLine(city);
+        // }
+        // int[] numbers = {45, 90 , 400, 36};
+
+        // foreach(int num in numbers)
+        // {
+        //     if(num%2==0)
+        //     {
+        //         Console.WriteLine(num);
+        //     }
+        // }
+        // int[] numbers = {45, 90 , 400, 36};
+
+        // int total =0;
+
+        // foreach(int num in numbers)
+        // {
+        //     total += num;
+        // }
+        // Console.WriteLine(total);
+
+
+        // LİSTELER Bir koleksiyon öğesidir.
+
+        // List<int> numbers = new List<int>()
+        // {
+        //     1, 2, 3, 4, 5, 6, 7
+        // };
+        // foreach(int sayi in numbers)
+        // {
+        // Console.WriteLine(sayi);    
+        // }
+
+        // string word ="Merhaba";
+
+        // foreach(char c in word)
+        // {
+        //     Console.WriteLine(c);
+        // }
+        
+
+
+        #endregion
+         
          }
     }
-}
 }
