@@ -186,11 +186,52 @@ namespace Arrays
         // {
         //     Console.WriteLine(c);
         // }
+
+        #endregion
+        #region Örnek Sınav Sistemi Uygulaması
+
+        Console.WriteLine("****** C# Sınav Uygulaması******");
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("-------------------------");
+        Console.WriteLine("Sınıfınızda Kaç Öğrenci Var");
+        int studentCount =int.Parse(Console.ReadLine());
         
+        // Öğrenci isimlerini ve not ortalamalarını saklayacak diziler
+        string[] studentNames = new string[studentCount];
+        double[] studentExamAvg = new double[studentCount];
 
+        for(int i=0; i<studentCount;i++)
+        {
+            Console.Write($"{i+1}. öğrencinin ismini giriniz");
+            studentNames[i] =Console.ReadLine();
+            double totalExamResult=0;
+ // Her öğrenci için 3 sınav notu girişi 
+            for (int j =0;j < 3;j++)
+            {
+            Console.WriteLine($"{studentNames[i]} öğrencinin {j+1}. not girişini sağlayınız.");
+            double value =double.Parse(Console.ReadLine());
+            totalExamResult += value;       
+            }
+        studentExamAvg[i] = totalExamResult / 3;
+        }
 
+        //Sınav Ort
+        for(int i =0; i < studentCount; i++)
+        {
+            Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]}");
+
+        if(studentExamAvg[i] >= 50)
+       {
+        Console.WriteLine($"{studentNames[i]} adlı öğrenci Ortalama Üstündedir.");
+       }
+       else{
+        Console.WriteLine($"{studentNames[i]} adlı öğrenci Ortalama Altındadır.");
+       }
+       // öğrencilerin ort ve geçip kalma durumları
         #endregion
          
          }
     }
+}
 }
