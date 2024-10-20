@@ -190,48 +190,124 @@ namespace Arrays
         #endregion
         #region Örnek Sınav Sistemi Uygulaması
 
-        Console.WriteLine("****** C# Sınav Uygulaması******");
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine("-------------------------");
-        Console.WriteLine("Sınıfınızda Kaç Öğrenci Var");
-        int studentCount =int.Parse(Console.ReadLine());
+//         Console.WriteLine("****** C# Sınav Uygulaması******");
+//         Console.WriteLine();
+//         Console.WriteLine();
+//         Console.WriteLine("-------------------------");
+//         Console.WriteLine("Sınıfınızda Kaç Öğrenci Var");
+//         int studentCount =int.Parse(Console.ReadLine());
         
-        // Öğrenci isimlerini ve not ortalamalarını saklayacak diziler
-        string[] studentNames = new string[studentCount];
-        double[] studentExamAvg = new double[studentCount];
+//         // Öğrenci isimlerini ve not ortalamalarını saklayacak diziler
+//         string[] studentNames = new string[studentCount];
+//         double[] studentExamAvg = new double[studentCount];
 
-        for(int i=0; i<studentCount;i++)
-        {
-            Console.Write($"{i+1}. öğrencinin ismini giriniz");
-            studentNames[i] =Console.ReadLine();
-            double totalExamResult=0;
- // Her öğrenci için 3 sınav notu girişi 
-            for (int j =0;j < 3;j++)
-            {
-            Console.WriteLine($"{studentNames[i]} öğrencinin {j+1}. not girişini sağlayınız.");
-            double value =double.Parse(Console.ReadLine());
-            totalExamResult += value;       
-            }
-        studentExamAvg[i] = totalExamResult / 3;
-        }
+//         for(int i=0; i<studentCount;i++)
+//         {
+//             Console.Write($"{i+1}. öğrencinin ismini giriniz");
+//             studentNames[i] =Console.ReadLine();
+//             double totalExamResult=0;
+//  // Her öğrenci için 3 sınav notu girişi 
+//             for (int j =0;j < 3;j++)
+//             {
+//             Console.WriteLine($"{studentNames[i]} öğrencinin {j+1}. not girişini sağlayınız.");
+//             double value =double.Parse(Console.ReadLine());
+//             totalExamResult += value;       
+//             }
+//         studentExamAvg[i] = totalExamResult / 3;
+//         }
 
-        //Sınav Ort
-        for(int i =0; i < studentCount; i++)
-        {
-            Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]}");
+//         //Sınav Ort
+//         for(int i =0; i < studentCount; i++)
+//         {
+//             Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]}");
 
-        if(studentExamAvg[i] >= 50)
-       {
-        Console.WriteLine($"{studentNames[i]} adlı öğrenci Ortalama Üstündedir.");
-       }
-       else{
-        Console.WriteLine($"{studentNames[i]} adlı öğrenci Ortalama Altındadır.");
-       }
+//         if(studentExamAvg[i] >= 50)
+//        {
+//         Console.WriteLine($"{studentNames[i]} adlı öğrenci Ortalama Üstündedir.");
+//        }
+//        else{
+//         Console.WriteLine($"{studentNames[i]} adlı öğrenci Ortalama Altındadır.");
+//        }
        // öğrencilerin ort ve geçip kalma durumları
         #endregion
+        #region  Void Metotlar 7.Ders  
+        //()
+        //Customer --> Listele, ekle, sil, güncelle 
+        //Geriye Değer Döndürmeyen Metotlar
+        // 
+
+        // void CustomerList()
+        // {
+        // Console.WriteLine("Ali Yıldız");
+        // Console.WriteLine("Ayşe Can");
+        // Console.WriteLine("Hakan Yıldız");
+        // }
+        // CustomerList();
+        
+        
+         #endregion 
+         #region Geriye Değer Döndürmeyen String Parametreli Metotlar
          
-         }
+        //  void WriteMethod(string custumerName)
+        //  {
+        //     Console.WriteLine(custumerName);
+
+        //  }
+        //  WriteMethod("Mehmet Yıldırım");
+
+        // void CustomerCard(string name,string surName)
+        // {
+        //     Console.WriteLine("Müşteri" + name + ""+surName);
+        // }
+
+        // CustomerCard("Mehmet", "Yıldız");
+        // CustomerCard("Ali", "Yıldız");
+//Geriye Değer Döndürmeyen İNT Parametreli Metotlar
+
+// void Sum(int number1, int number2, int number3)
+// {
+//     int result = number1 +number2 + number3;
+//     Console.WriteLine(result);
+// }    
+//     Sum(4,5,6);
+    #endregion
+    #region Geriye Değer Döndüren Metotlar
+    
+    // string CustomerName()
+    // {
+    //     return " Buse Yıldız";
+    // }
+    // CustomerName();
+
+    // string StudentCard()
+    // {
+    //     string name = "Ali";
+    //     string surname ="Kaya";
+    //     return name + " " + surname;
+    //         }
+    //         Console.WriteLine(StudentCard());
+
+  //  Geriye Değer Döndüren parametreli Metotlar
+      
+      string CountryCard(string countryName, string capital, string flagColor)
+      {
+        string cardInfo=countryName + " "+capital+" "+ flagColor;
+        return cardInfo;
+      }
+      string x,y,z;
+      Console.Write("Ülke Adını Giriniz");
+      x =Console.ReadLine();
+
+      Console.Write("Başkenti Giriniz");
+      y =Console.ReadLine();
+
+      Console.Write("Bayrak Rengini Giriniz");
+      z =Console.ReadLine();
+
+     Console.WriteLine(CountryCard(x,y,z));
+
+   #endregion
+    
     }
 }
 }

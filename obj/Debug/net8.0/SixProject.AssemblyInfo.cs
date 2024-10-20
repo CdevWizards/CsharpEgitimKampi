@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SixProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5844c662dacff6d80ad0a5c4405578b9cd8c68aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3eef8cb83be5a656e95ceb0f3a8799616cfbe11")]
 [assembly: System.Reflection.AssemblyProductAttribute("SixProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SixProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
