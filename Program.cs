@@ -287,27 +287,51 @@ namespace Arrays
     //         }
     //         Console.WriteLine(StudentCard());
 
-  //  Geriye Değer Döndüren parametreli Metotlar
+  //  Geriye Değer Döndüren string parametreli Metotlar
       
-      string CountryCard(string countryName, string capital, string flagColor)
-      {
-        string cardInfo=countryName + " "+capital+" "+ flagColor;
-        return cardInfo;
-      }
-      string x,y,z;
-      Console.Write("Ülke Adını Giriniz");
-      x =Console.ReadLine();
+    //   string CountryCard(string countryName, string capital, string flagColor)
+    //   {
+    //     string cardInfo=countryName + " "+capital+" "+ flagColor;
+    //     return cardInfo;
+    //   }
+    //   string x,y,z;
+    //   Console.Write("Ülke Adını Giriniz");
+    //   x =Console.ReadLine();
 
-      Console.Write("Başkenti Giriniz");
-      y =Console.ReadLine();
+    //   Console.Write("Başkenti Giriniz");
+    //   y =Console.ReadLine();
 
-      Console.Write("Bayrak Rengini Giriniz");
-      z =Console.ReadLine();
+    //   Console.Write("Bayrak Rengini Giriniz");
+    //   z =Console.ReadLine();
 
-     Console.WriteLine(CountryCard(x,y,z));
+    //  Console.WriteLine(CountryCard(x,y,z));
 
-   #endregion
+    // Geriye Değer Döndüren Int Parametreli Metotlar
     
+    // int Sum(int number1, int number2)
+    // {
+    //   int result = number1 + number2;
+    //   return result;
+    // }
+    // Console.WriteLine(Sum(48, 55));
+
+    string ExamResult(string student,int exam1, int exam2, int exam3)
+    {
+      int result=(exam1 + exam2 + exam3) / 3;
+      if (result >= 50)
+      {
+        return student + "İsimli öğrenci sınavı geçti";
+      }
+      else 
+      {
+        return student +  "Öğrenci Başarısız oldu";
+      }
     }
+    Console.WriteLine(ExamResult("Ali", 50, 60, 40));
+    Console.WriteLine(ExamResult("Ayşe", 50, 60, 40));
+
+    Console.Read();
+    #endregion
+      }
 }
 }
